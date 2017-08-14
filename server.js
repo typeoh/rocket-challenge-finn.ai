@@ -2,6 +2,8 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var http = require("http");
+var https = require("https");
 
 //instances
 var app = express();
@@ -11,6 +13,9 @@ var router = express.Router();
 var port = process.env.API_PORT || 3001;
 //now we should configure the API to use bodyParser and look for 
 //JSON data in the request body
+
+//db config
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 //To prevent errors from Cross Origin Resource Sharing, we will set 
@@ -26,6 +31,8 @@ app.use(function(req, res, next) {
 });
 //now we can set the route path & initialize the API
 router.get('/', function(req, res) {
+
+
  res.json({ message: 'API Initialized!'});
 });
 //Use our router configuration when we call /api
