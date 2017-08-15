@@ -9,13 +9,13 @@ class Rocket extends Component {
     };
   }
 componentDidMount(){
-  let url = 'https://launchlibrary.net/1.2/agency/5'
+  let url = 'https://launchlibrary.net/1.2/launch/2017-01-01/2015-08-01'
   fetch(url).then((responseText) => {
      return responseText.json();
   })
   .then((response) => {
      this.setState({
-       rockets: response
+       rockets: response.launches
      });
   });
 }
@@ -24,7 +24,7 @@ componentDidMount(){
         console.log('new state?', this.state)
     return (
       <div>
-    <Launch />
+    <Launch rockets={this.state.rockets}/>
       </div>
     );
   }
