@@ -4,7 +4,7 @@ class Launch extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      latestLaunch: []
+      latestLaunch: [],
     }
   }
   componentWillReceiveProps(nextProps) {
@@ -38,8 +38,8 @@ class Launch extends Component {
                       <strong>{launch.name}</strong> <small>{launch.location.name}</small> 
                       <span><small>{launch.windowstart}</small></span>
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </span>
+                      <small>{launch.rocket.agencies[0].name}</small>
+                    </span>
                     </p>
                   </div>
                   <nav className="level is-mobile">
