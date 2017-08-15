@@ -35,18 +35,20 @@ class Launch extends Component {
                 <div className="media-content">
                   <div className="content">
                     <p>
-                      <strong>{launch.name}</strong> <small>{launch.location.name}</small>
-                      <span><small>{launch.windowstart}</small></span>
-                      <span>
-                        <small>{launch.rocket.agencies[0].name}</small>
-                      </span>
+                      <strong>{launch.name}</strong> <small>{launch.rocket.agencies[0].name}</small>
+                      <div className="level-right">
+                        <small>{launch.location.name}</small>
+                      </div>
                     </p>
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
                       <span>
-                      <small><a className="link is-active" href={launch.rocket.wikiURL}>For More Info</a></small>
+                        <small><a className="link is-active" href={launch.rocket.wikiURL}>For More Info</a></small>
                       </span>
+                    </div>
+                    <div className="level-left">
+                      <span><h6 className="title is-6">{launch.windowstart}</h6></span>
                     </div>
                   </nav>
                 </div>

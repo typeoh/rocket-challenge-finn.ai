@@ -9,14 +9,16 @@
   max-height: 7rem;
 }
 .navbar-logo {
-  width: 30%;
+  width: 18%;
   right: 0;
   margin-right: 2rem;
   margin-top: 2rem;
   position: fixed;
 }
 .box {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 .rocket-image {
   border-radius: 150px;
