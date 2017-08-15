@@ -6,14 +6,10 @@ class Navbar extends Component {
       <div>
       <nav className="navbar">
         <div className="navbar-brand">
-          <a className="navbar-item" href="http://bulma.io">
-            <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"></img>
-          </a>
-          <div className="navbar-burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+            <img src="http://imgur.com/PzRyZhD.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"></img>
+        </div>
+        <div className="navbar-logo">
+            <img src="http://imgur.com/JLCR9n7.png" ></img>
         </div>
       </nav>
       </div>

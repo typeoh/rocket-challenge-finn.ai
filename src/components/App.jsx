@@ -5,7 +5,7 @@ import Rocket from './Rocket.jsx'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-container">
       <Navbar />
       <Rocket />
       </div>

@@ -29,30 +29,24 @@ class Launch extends Component {
               <article className="media">
                 <div className="media-left">
                   <figure className="image is-64x64">
-                    <img src="http://bulma.io/images/placeholders/128x128.png" alt="Image"></img>
+                    <img className="rocket-image" src={launch.rocket.imageURL} alt="Image"></img>
                   </figure>
                 </div>
                 <div className="media-content">
                   <div className="content">
                     <p>
-                      <strong>{launch.name}</strong> <small>{launch.location.name}</small> 
+                      <strong>{launch.name}</strong> <small>{launch.location.name}</small>
                       <span><small>{launch.windowstart}</small></span>
                       <span>
-                      <small>{launch.rocket.agencies[0].name}</small>
-                    </span>
+                        <small>{launch.rocket.agencies[0].name}</small>
+                      </span>
                     </p>
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
-                      <a className="level-item">
-                        <span className="icon is-small"><i className="fa fa-reply"></i></span>
-                      </a>
-                      <a className="level-item">
-                        <span className="icon is-small"><i className="fa fa-retweet"></i></span>
-                      </a>
-                      <a className="level-item">
-                        <span className="icon is-small"><i className="fa fa-heart"></i></span>
-                      </a>
+                      <span>
+                      <small><a className="link is-active" href={launch.rocket.wikiURL}>For More Info</a></small>
+                      </span>
                     </div>
                   </nav>
                 </div>
@@ -64,6 +58,6 @@ class Launch extends Component {
         }}
 </div>
     );
-}
+  }
 }
 export default Launch;

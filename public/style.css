@@ -1,0 +1,28 @@
+.app-container {
+  background-color: #181842;
+}
+.navbar {
+  min-height: 7rem;
+  background-color: #181842;
+}
+.navbar-brand {
+  max-height: 7rem;
+}
+.navbar-logo {
+  width: 30%;
+  right: 0;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  position: fixed;
+}
+.box {
+  margin: 1rem;
+}
+.rocket-image {
+  border-radius: 150px;
+  max-height: 4rem;
+  min-height: 4rem;
+}
+.link {
+  color: #45B9FB;
+}
